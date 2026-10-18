@@ -1,229 +1,187 @@
-// script.js — load content from data/site-data.json and populate the page
-// Edit data/site-data.json to add your own image paths, titles, descriptions and links.
-
 async function loadSiteData() {
   try {
-    const res = await fetch('data/site-data.json');
-    if (!res.ok) throw new Error('Could not fetch site data');
-    const data = await res.json();
+    const response = await fetch("data/site-data.json");
+    if (!response.ok) throw new Error("Could not load data/site-data.json");
 
-    // helper to create image slide
-    const createImageSlide = (src, alt = '') => {
-      const slide = document.createElement('div');
-      slide.className = 'carousel-slide';
-      const img = document.createElement('img');
+    const data = await response.json();
+
+    const createImageSlide = (src, alt = "") => {
+      const slide = document.createElement("div");
+      slide.className = "carousel-slide";
+      const img = document.createElement("img");
       img.src = src;
       img.alt = alt;
-      img.loading = 'lazy';
+      img.loading = "lazy";
       slide.appendChild(img);
       return slide;
     };
 
-    // Paintings
-    const paintingsTrack = document.querySelector('#paintings-carousel .carousel-track');
-    if (paintingsTrack && Array.isArray(data.paintings)) {
-      paintingsTrack.innerHTML = '';
-      data.paintings.forEach(p => paintingsTrack.appendChild(createImageSlide(p.src, p.alt || p.title || '')));
+    const addImageSlides = (containerSelector, items) => {
+      const container = document.querySelector(containerSelector);
+      if (!container || !Array.isArray(items)) return;
+      container.innerHTML = "";
+      items.forEach(item => {
+        container.appendChild(createImageSlide(item.src, item.alt || item.title || ""));
+      });
+    };
+
+    addImageSlides("#paintings-carousel .carousel-track", data.paintings || []);
+    addImageSlides("#sketches-carousel .carousel-track", data.sketches || []);
+    addImageSlides("#colored-carousel .carousel-track", data.colored || []);
+
+    const buildProjectCard = (item, typeLabel = "") => {
+      const card = document.createElement("article");
+      card.className = "project-card";
+
+      const img = document.createElement("img");
+      img.src = item.image || "";
+      img.alt = item.title || "";
+      img.loading = "lazy";
+
+      const content = document.createElement("div");
+      content.className = "project-body";
+
+      const type = document.createElement("span");
+      type.className = "project-type";
+      type.textContent = typeLabel || "Project";
+
+      const title = document.createElement("h3");
+      title.textContent = item.title || "";
+
+      const desc = document.createElement("p");
+      desc.textContent = item.description || "";
+
+      const link = document.createElement("a");
+      link.href = item.url || "#";
+      link.target = "_blank";
+      link.rel = "noreferrer";
+      link.textContent = "View";
+
+      content.appendChild(type);
+      content.appendChild(title);
+      content.appendChild(desc);
+      content.appendChild(link);
+
+      card.appendChild(img);
+      card.appendChild(content);
+      return card;
+    };
+
+    const projectsList = document.getElementById("projects-list");
+    if (projectsList && Array.isArray(data.projects)) {
+      projectsList.innerHTML = "";
+      data.projects.forEach(item => {
+        projectsList.appendChild(buildProjectCard(item, "Project"));
+      });
     }
 
-    // Sketches
-    const sketchesTrack = document.querySelector('#sketches-carousel .carousel-track');
-    if (sketchesTrack && Array.isArray(data.sketches)) {
-      sketchesTrack.innerHTML = '';
-      data.sketches.forEach(s => sketchesTrack.appendChild(createImageSlide(s.src, s.alt || s.title || '')));
+    const eventsList = document.getElementById("events-list");
+    if (eventsList && Array.isArray(data.events)) {
+      eventsList.innerHTML = "";
+      data.events.forEach(item => {
+        eventsList.appendChild(buildProjectCard(item, "Event"));
+      });
     }
 
-    // Colored illustrations
-    const coloredTrack = document.querySelector('#colored-carousel .carousel-track');
-    if (coloredTrack && Array.isArray(data.colored)) {
-      coloredTrack.innerHTML = '';
-      data.colored.forEach(c => coloredTrack.appendChild(createImageSlide(c.src, c.alt || c.title || '')));
-    }
+    const recommendationTrack = document.querySelector("#recommendations-carousel .carousel-track");
+    if (recommendationTrack && Array.isArray(data.testimonials)) {
+      recommendationTrack.innerHTML = "";
+      data.testimonials.forEach(item => {
+        const wrapper = document.createElement("div");
+        wrapper.className = "testimonial carousel-slide";
 
-    // Testimonials
-    const testimonialsTrack = document.querySelector('#testimonials-carousel .carousel-track');
-    if (testimonialsTrack && Array.isArray(data.testimonials)) {
-      testimonialsTrack.innerHTML = '';
-      data.testimonials.forEach(t => {
-        const node = document.createElement('div');
-        node.className = 'testimonial';
-
-        const avatar = document.createElement('div');
-        avatar.className = 'avatar';
-        if (t.image) {
-          const img = document.createElement('img');
-          img.src = t.image;
-          img.alt = t.name || 'Recommender';
-          img.loading = 'lazy';
-          img.style.width = '100%';
-          img.style.height = '100%';
-          img.style.objectFit = 'cover';
+        const avatar = document.createElement("div");
+        avatar.className = "avatar";
+        if (item.image) {
+          const img = document.createElement("img");
+          img.src = item.image;
+          img.alt = item.name || "Recommender";
+          img.loading = "lazy";
           avatar.appendChild(img);
-        } else {
-          avatar.textContent = (t.name || 'R').split(' ').map(n => n[0] || '').join('').slice(0,2).toUpperCase();
         }
 
-        const quote = document.createElement('div');
-        quote.className = 'quote';
-        const p = document.createElement('p');
-        p.textContent = t.text || '';
-        const cite = document.createElement('div');
-        cite.style.marginTop = '8px';
-        cite.style.fontWeight = '700';
-        cite.textContent = t.name || '';
+        const quote = document.createElement("div");
+        quote.className = "quote";
+        const p = document.createElement("p");
+        p.textContent = `"${item.text || ""}"`;
+        const strong = document.createElement("strong");
+        strong.textContent = item.name || "";
         quote.appendChild(p);
-        quote.appendChild(cite);
+        quote.appendChild(strong);
 
-        node.appendChild(avatar);
-        node.appendChild(quote);
-        testimonialsTrack.appendChild(node);
+        wrapper.appendChild(avatar);
+        wrapper.appendChild(quote);
+        recommendationTrack.appendChild(wrapper);
       });
     }
 
-    // Projects
-    const projectsList = document.getElementById('projects-list');
-    if (projectsList && Array.isArray(data.projects)) {
-      projectsList.innerHTML = '';
-      data.projects.forEach(p => {
-        const art = document.createElement('article');
-        art.className = 'project-card card';
-
-        const img = document.createElement('img');
-        img.src = p.image || '';
-        img.alt = p.title || '';
-        img.loading = 'lazy';
-
-        const meta = document.createElement('div');
-        meta.className = 'project-body';
-        const type = document.createElement('span');
-        type.className = 'project-type';
-        type.textContent = p.type || '';
-        const h3 = document.createElement('h3');
-        h3.textContent = p.title || '';
-        const description = document.createElement('p');
-        description.textContent = p.description || '';
-        const a = document.createElement('a');
-        a.href = p.url || '#';
-        a.target = '_blank';
-        a.rel = 'noreferrer';
-        a.textContent = 'View';
-
-        meta.appendChild(type);
-        meta.appendChild(h3);
-        meta.appendChild(description);
-        meta.appendChild(a);
-
-        art.appendChild(img);
-        art.appendChild(meta);
-        projectsList.appendChild(art);
-      });
-    }
-
-    // Events
-    const eventsList = document.getElementById('events-list');
-    if (eventsList && Array.isArray(data.events)) {
-      eventsList.innerHTML = '';
-      data.events.forEach(e => {
-        const art = document.createElement('article');
-        art.className = 'project-card card';
-
-        const img = document.createElement('img');
-        img.src = e.image || '';
-        img.alt = e.title || '';
-        img.loading = 'lazy';
-
-        const meta = document.createElement('div');
-        meta.className = 'project-body';
-        const h3 = document.createElement('h3');
-        h3.textContent = e.title || '';
-        const description = document.createElement('p');
-        description.textContent = e.description || '';
-        const a = document.createElement('a');
-        a.href = e.url || '#';
-        a.target = '_blank';
-        a.rel = 'noreferrer';
-        a.textContent = 'Learn more';
-
-        meta.appendChild(h3);
-        meta.appendChild(description);
-        meta.appendChild(a);
-
-        art.appendChild(img);
-        art.appendChild(meta);
-        eventsList.appendChild(art);
-      });
-    }
-
-    // Links
-    const linksGrid = document.getElementById('links-grid');
+    const linksGrid = document.getElementById("links-grid");
     if (linksGrid && Array.isArray(data.links)) {
-      linksGrid.innerHTML = '';
-      data.links.forEach(l => {
-        const a = document.createElement('a');
-        a.className = 'link-item';
-        a.href = l.url || '#';
-        a.target = '_blank';
-        a.rel = 'noreferrer';
-        a.textContent = l.title || l.url || '';
-        linksGrid.appendChild(a);
+      linksGrid.innerHTML = "";
+      data.links.forEach(item => {
+        const link = document.createElement("a");
+        link.className = "link-item";
+        link.href = item.url || "#";
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        link.textContent = item.title || "";
+        linksGrid.appendChild(link);
       });
     }
 
-    // after DOM insertion, bind carousel controls
-    bindCarouselControls();
+    const year = document.getElementById("year");
+    if (year) year.textContent = new Date().getFullYear();
 
-  } catch (err) {
-    console.error('Error loading site data:', err);
+    bindCarouselControls();
+    bindContactForm();
+
+  } catch (error) {
+    console.error("Site data failed to load:", error);
   }
 }
 
 function bindCarouselControls() {
-  document.querySelectorAll('.carousel').forEach((carousel) => {
-    const track = carousel.querySelector('.carousel-track');
-    const prev = carousel.querySelector('.carousel-prev');
-    const next = carousel.querySelector('.carousel-next');
+  document.querySelectorAll("[data-carousel]").forEach((carousel) => {
+    const track = carousel.querySelector(".carousel-track");
+    const prev = carousel.querySelector(".carousel-prev");
+    const next = carousel.querySelector(".carousel-next");
+
+    if (!track || !prev || !next) return;
 
     const getScrollAmount = () => {
-      const slide = track.querySelector('.carousel-slide');
-      const style = slide ? getComputedStyle(slide) : null;
-      const gap = style ? parseFloat(getComputedStyle(track).gap || 12) : 12;
-      const w = slide ? slide.getBoundingClientRect().width : 320;
-      return Math.round(w + gap);
+      const firstSlide = track.querySelector(".carousel-slide");
+      const gap = 16;
+      return firstSlide ? firstSlide.getBoundingClientRect().width + gap : 320;
     };
 
-    if (prev) prev.addEventListener('click', () => track.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' }));
-    if (next) next.addEventListener('click', () => track.scrollBy({ left: getScrollAmount(), behavior: 'smooth' }));
+    prev.addEventListener("click", () =>
+      track.scrollBy({ left: -getScrollAmount(), behavior: "smooth" })
+    );
+
+    next.addEventListener("click", () =>
+      track.scrollBy({ left: getScrollAmount(), behavior: "smooth" })
+    );
   });
 }
 
-// Contact form handling (simple simulated send)
-function initContactForm() {
-  const form = document.getElementById('contact-form');
+function bindContactForm() {
+  const form = document.getElementById("contact-form");
   if (!form) return;
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const btn = form.querySelector('button');
-    const original = btn.textContent;
-    btn.textContent = 'Sending...';
-    btn.disabled = true;
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const button = form.querySelector("button");
+    const original = button.textContent;
+
+    button.textContent = "Sent";
+    button.disabled = true;
+
     setTimeout(() => {
-      btn.textContent = original;
-      btn.disabled = false;
+      button.textContent = original;
+      button.disabled = false;
       form.reset();
-      alert('Message simulated. Replace with your backend when ready.');
-    }, 1000);
+    }, 1200);
   });
 }
 
-// Set year
-function setYear() {
-  const y = document.getElementById('year');
-  if (y) y.textContent = new Date().getFullYear();
-}
-
-// Init
-window.addEventListener('DOMContentLoaded', () => {
-  loadSiteData();
-  initContactForm();
-  setYear();
-});
+window.addEventListener("DOMContentLoaded", loadSiteData);
