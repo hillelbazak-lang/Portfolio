@@ -1,0 +1,66 @@
+{
+  "paintings": [
+    { "src": "images/paintings/painting-01.jpg", "title": "Painting 01", "alt": "Painting 01" },
+    { "src": "images/paintings/painting-02.jpg", "title": "Painting 02", "alt": "Painting 02" },
+    { "src": "images/paintings/painting-03.jpg", "title": "Painting 03", "alt": "Painting 03" },
+    { "src": "images/paintings/painting-04.jpg", "title": "Painting 04", "alt": "Painting 04" },
+    { "src": "images/paintings/painting-05.jpg", "title": "Painting 05", "alt": "Painting 05" }
+  ],
+  "sketches": [
+    { "src": "images/illustrations/sketch-01.jpg", "title": "Sketch 01", "alt": "Sketch 01" },
+    { "src": "images/illustrations/sketch-02.jpg", "title": "Sketch 02", "alt": "Sketch 02" },
+    { "src": "images/illustrations/sketch-03.jpg", "title": "Sketch 03", "alt": "Sketch 03" },
+    { "src": "images/illustrations/sketch-04.jpg", "title": "Sketch 04", "alt": "Sketch 04" }
+  ],
+  "colored": [
+    { "src": "images/illustrations/colored-01.jpg", "title": "Colored 01", "alt": "Colored 01" },
+    { "src": "images/illustrations/colored-02.jpg", "title": "Colored 02", "alt": "Colored 02" },
+    { "src": "images/illustrations/colored-03.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "images/illustrations/colored-04.jpg", "title": "Colored 04", "alt": "Colored 04" }
+  ],
+  "projects": [
+    {
+      "title": "Project One",
+      "description": "A visual narrative project exploring texture, atmosphere, and character through layered painting and illustration.",
+      "image": "images/projects/project-01.jpg",
+      "url": "https://example.com/project-1"
+    },
+    {
+      "title": "Project Two",
+      "description": "A watercolor-led illustration series developed for storytelling and editorial work.",
+      "image": "images/projects/project-02.jpg",
+      "url": "https://example.com/project-2"
+    }
+  ],
+  "events": [
+    {
+      "title": "Exhibition A",
+      "description": "A recent exhibition featuring selected works from the current collection and studies.",
+      "image": "images/events/event-01.jpg",
+      "url": "https://example.com/event-1"
+    },
+    {
+      "title": "Talk B",
+      "description": "An artist talk and panel discussion focused on visual storytelling and process.",
+      "image": "images/events/event-02.jpg",
+      "url": "https://example.com/event-2"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Collector A",
+      "text": "The work carries atmosphere and emotion in a way that feels intimate, vivid, and unforgettable.",
+      "image": "images/testimonials/person-01.jpg"
+    },
+    {
+      "name": "Curator B",
+      "text": "A strong visual language rooted in narrative, craft, and clarity of expression.",
+      "image": "images/testimonials/person-02.jpg"
+    }
+  ],
+  "links": [
+    { "title": "Press: Art Feature", "url": "https://example.com/press" },
+    { "title": "Interview: Studio Talk", "url": "https://example.com/interview" },
+    { "title": "Exhibition Review", "url": "https://example.com/review" }
+  ]
+}
