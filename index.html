@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hillel Bazak: Artist and Illustrator</title>
-    <meta name="description" content="Portfolio of Hillel Bazak — paintings, illustrations, projects and events." />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <meta
+      name="description"
+      content="Portfolio of Hillel Bazak — paintings, illustrations, projects, and events."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
       <div class="container header-inner">
         <h1 class="site-title">Hillel Bazak: <span>Artist and Illustrator</span></h1>
+
         <nav class="site-nav" aria-label="Main navigation">
           <a href="#hero">Home</a>
           <a href="#about">About</a>
@@ -26,179 +32,200 @@
           <a href="#links">Links</a>
           <a href="#contact">Contact</a>
         </nav>
-        <button class="nav-toggle" aria-expanded="false" aria-controls="site-navigation">☰</button>
       </div>
     </header>
 
     <main>
-      <!-- Hero -->
       <section id="hero" class="hero">
         <div class="container hero-inner">
-          <div class="hero-art">
-            <!-- Reference images can be used here as background or illustration -->
-            <img src="images/hero/hero-1.jpg" alt="Hillel Bazak artwork preview" />
-          </div>
           <div class="hero-copy">
+            <p class="eyebrow">Artist and Illustrator</p>
             <h2>Hillel Bazak</h2>
-            <p class="hero-sub">Artist & Illustrator — paintings, sketches, and storytelling imagery.</p>
-            <p class="hero-lead">I create narrative paintings and illustrative work rooted in traditional media, exploring character, texture, and color. Browse paintings, sketches, and recent projects below.</p>
+            <p class="hero-sub">Artist and Illustrator</p>
+            <p class="hero-lead">
+              A portfolio rooted in narrative painting, illustration, texture, and
+              visual storytelling. This selection highlights paintings, sketches,
+              editorial projects, and recent exhibitions.
+            </p>
+
             <div class="hero-ctas">
               <a class="btn primary" href="#paintings">View Paintings</a>
-              <a class="btn" href="#contact">Contact</a>
+              <a class="btn secondary" href="#contact">Contact</a>
             </div>
           </div>
+
+          <div class="hero-art">
+            <img
+              src="images/hero/hero-1.jpg"
+              alt="Featured painting"
+              loading="eager"
+            />
+          </div>
         </div>
       </section>
 
-      <!-- About -->
       <section id="about" class="section">
-        <div class="container split about-inner">
-          <div class="about-image">
-            <div class="profile-placeholder">HB</div>
-            <p class="caption">Profile photo placeholder — replace with your portrait at images/profile.jpg</p>
+        <div class="container split">
+          <div class="about-visual">
+            <img
+              src="images/profile/profile.jpg"
+              alt="Artist portrait"
+              class="profile-image"
+            />
           </div>
+
           <div class="about-text">
+            <p class="section-tag">About</p>
             <h3>About</h3>
-            <p class="bio">Hillel Bazak is an artist and illustrator working in traditional and digital media. His work focuses on narrative composition, texture, and evocative color. He has produced fine art paintings, editorial illustrations, and collaborative projects for clients and exhibitions.</p>
-            <p>Mediums: oil, acrylic, colored pencil, mixed media. Available for commissions, exhibitions, and editorial work.</p>
+            <p>
+              Hillel Bazak is an artist and illustrator working between painting,
+              illustration, and storytelling. His practice is driven by visual
+              narratives, tactile surfaces, and a love for expressive color and
+              mark-making.
+            </p>
+            <p>
+              Through painting and illustration, he creates work that blends
+              character, atmosphere, and emotional core. The portfolio below
+              highlights paintings, drawings, projects, and events.
+            </p>
           </div>
         </div>
       </section>
 
-      <!-- Paintings carousel -->
       <section id="paintings" class="section alt">
         <div class="container">
           <div class="section-head">
+            <p class="section-tag">Paintings</p>
             <h3>Paintings</h3>
-            <p class="muted">A curated selection of paintings. The carousel is interactive and auto-plays.</p>
           </div>
 
-          <div class="carousel" data-type="gallery" id="paintings-carousel" aria-roledescription="carousel">
+          <div class="carousel" id="paintings-carousel" data-carousel>
+            <button class="carousel-btn carousel-prev" type="button" aria-label="Previous image">
+              ‹
+            </button>
             <div class="carousel-track" role="list"></div>
-            <button class="carousel-prev" aria-label="Previous painting">‹</button>
-            <button class="carousel-next" aria-label="Next painting">›</button>
-            <div class="carousel-indicators" role="tablist"></div>
+            <button class="carousel-btn carousel-next" type="button" aria-label="Next image">
+              ›
+            </button>
           </div>
         </div>
       </section>
 
-      <!-- Illustrations -->
       <section id="illustrations" class="section">
         <div class="container">
           <div class="section-head">
+            <p class="section-tag">Illustrations</p>
             <h3>Illustrations</h3>
-            <p class="muted">Sketches and colored illustration work are separated into two stacked carousels below.</p>
           </div>
 
-          <div class="stacked-carousels">
-            <div class="carousel small" id="sketches-carousel" aria-roledescription="carousel">
-              <h4 class="carousel-title">Sketches & Drawings</h4>
+          <div class="illustration-stack">
+            <div class="carousel small" id="sketches-carousel" data-carousel>
+              <h4>Sketches & Drawings</h4>
+              <button class="carousel-btn carousel-prev" type="button" aria-label="Previous sketch">
+                ‹
+              </button>
               <div class="carousel-track" role="list"></div>
-              <button class="carousel-prev" aria-label="Previous sketch">‹</button>
-              <button class="carousel-next" aria-label="Next sketch">›</button>
+              <button class="carousel-btn carousel-next" type="button" aria-label="Next sketch">
+                ›
+              </button>
             </div>
 
-            <div class="carousel small" id="colored-carousel" aria-roledescription="carousel">
-              <h4 class="carousel-title">Colored & Digital Illustrations</h4>
+            <div class="carousel small" id="colored-carousel" data-carousel>
+              <h4>Color & Digital Illustrations</h4>
+              <button class="carousel-btn carousel-prev" type="button" aria-label="Previous illustration">
+                ‹
+              </button>
               <div class="carousel-track" role="list"></div>
-              <button class="carousel-prev" aria-label="Previous illustration">‹</button>
-              <button class="carousel-next" aria-label="Next illustration">›</button>
+              <button class="carousel-btn carousel-next" type="button" aria-label="Next illustration">
+                ›
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- Projects -->
       <section id="projects" class="section alt">
         <div class="container">
           <div class="section-head">
+            <p class="section-tag">Projects</p>
             <h3>Projects</h3>
-            <p class="muted">Selected projects and collaborations.</p>
           </div>
-
-          <div class="grid two-up projects-grid" id="projects-list">
-            <!-- Project items will be populated from script.js. Two initial items are included by default. -->
-          </div>
+          <div id="projects-list" class="project-grid"></div>
         </div>
       </section>
 
-      <!-- Recent Events -->
       <section id="events" class="section">
         <div class="container">
           <div class="section-head">
+            <p class="section-tag">Recent Events</p>
             <h3>Recent Events</h3>
-            <p class="muted">Shows, exhibitions, and press — with links.</p>
           </div>
-
-          <div class="grid two-up events-grid" id="events-list">
-            <!-- Populated by script.js. Two initial items. -->
-          </div>
+          <div id="events-list" class="project-grid"></div>
         </div>
       </section>
 
-      <!-- Recommendations -->
       <section id="recommendations" class="section alt">
         <div class="container">
           <div class="section-head">
+            <p class="section-tag">Recommendations</p>
             <h3>Recommendations</h3>
-            <p class="muted">Kind words from collaborators and collectors.</p>
           </div>
 
-          <div class="testimonial-carousel carousel" id="testimonials-carousel">
+          <div id="recommendations-carousel" class="carousel testimonial-carousel" data-carousel>
+            <button class="carousel-btn carousel-prev" type="button" aria-label="Previous recommendation">
+              ‹
+            </button>
             <div class="carousel-track" role="list"></div>
-            <button class="carousel-prev" aria-label="Previous testimonial">‹</button>
-            <button class="carousel-next" aria-label="Next testimonial">›</button>
+            <button class="carousel-btn carousel-next" type="button" aria-label="Next recommendation">
+              ›
+            </button>
           </div>
         </div>
       </section>
 
-      <!-- Links -->
       <section id="links" class="section">
         <div class="container">
           <div class="section-head">
+            <p class="section-tag">Links</p>
             <h3>Links</h3>
-            <p class="muted">Press features, interviews and selected external links.</p>
           </div>
 
-          <div class="links-grid" id="links-grid">
-            <!-- Links populated from script.js -->
-          </div>
+          <div id="links-grid" class="links-grid"></div>
         </div>
       </section>
 
-      <!-- Contact -->
       <section id="contact" class="section alt">
-        <div class="container contact-inner">
-          <div>
+        <div class="container contact-wrap">
+          <div class="contact-copy">
+            <p class="section-tag">Contact</p>
             <h3>Contact</h3>
-            <p class="muted">Email and social links for commissions, press, and collaborations.</p>
-            <ul class="contact-list">
-              <li>Email: <a href="mailto:hillel@example.com">hillel@example.com</a></li>
-              <li>Instagram: <a href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">@yourhandle</a></li>
-            </ul>
+            <p>Email: <a href="mailto:hillel@example.com">hillel@example.com</a></p>
+            <p>Instagram: <a href="https://instagram.com/yourhandle" target="_blank" rel="noreferrer">@yourhandle</a></p>
           </div>
 
           <form id="contact-form" class="contact-form">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" placeholder="Your name" required>
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@example.com" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
-
+            <label>
+              Name
+              <input type="text" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" placeholder="you@example.com" />
+            </label>
+            <label>
+              Message
+              <textarea rows="5" placeholder="Tell me about your project"></textarea>
+            </label>
             <button type="submit" class="btn primary">Send</button>
           </form>
         </div>
       </section>
-
     </main>
 
     <footer class="site-footer">
       <div class="container footer-inner">
         <p>© <span id="year"></span> Hillel Bazak</p>
-        <nav class="footer-nav"><a href="#top">Back to top</a></nav>
+        <a href="#hero">Back to top</a>
       </div>
     </footer>
 
