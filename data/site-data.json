@@ -4,7 +4,8 @@
     { "src": "images/Polisher", "title": "Painting 02", "alt": "Painting 02" },
     { "src": "images/Gardener", "title": "Painting 03", "alt": "Painting 03" },
     { "src": "images/P cannan", "title": "Painting 04", "alt": "Painting 04" },
-    { "src": "images/paintings/painting-05.jpg", "title": "Painting 05", "alt": "Painting 05" }
+    { "src": "images/paintings/painting-05.jpg", "title": "Painting 05", "alt": "Painting 05" },
+        { "src": "images/paintings/painting-05.jpg", "title": "Painting 05", "alt": "Painting 05" }
   ],
   "sketches": [
     { "src": "images/illustrations/sketch-01.jpg", "title": "Sketch 01", "alt": "Sketch 01" },
