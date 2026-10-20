@@ -16,7 +16,7 @@
     { "src": "images/illustrations/sketch-04.jpg", "title": "Sketch 04", "alt": "Sketch 04" }
   ],
   "colored": [
-    { "src": "images/illustrations/colored-01.jpg", "title": "Colored 01", "alt": "Colored 01" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792484525/IMG_9605.jpg", "title": "Colored 01", "alt": "Colored 01" },
     { "src": "images/illustrations/colored-02.jpg", "title": "Colored 02", "alt": "Colored 02" },
     { "src": "images/illustrations/colored-03.jpg", "title": "Colored 03", "alt": "Colored 03" },
     { "src": "images/illustrations/colored-04.jpg", "title": "Colored 04", "alt": "Colored 04" }
