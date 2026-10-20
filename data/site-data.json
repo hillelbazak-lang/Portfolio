@@ -61,18 +61,38 @@
     {
       "title": "Exhibition A",
       "description": "A recent exhibition featuring selected works from the current collection and studies.",
-      "image": "images/events/event-01.jpg",
+      "image": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792490706/IMG_0116.jpg",
       "url": "https://example.com/event-1"
     },
     {
       "title": "Talk B",
       "description": "An artist talk and panel discussion focused on visual storytelling and process.",
-      "image": "images/events/event-02.jpg",
+      "image": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792490454/IMG_6168.jpg",
       "url": "https://example.com/event-2"
     }
   ],
   "testimonials": [
     {
+      "name": "Collector A",
+      "text": "The work carries atmosphere and emotion in a way that feels intimate, vivid, and unforgettable.",
+      "image": "images/testimonials/person-01.jpg"
+    },
+      {
+      "name": "Collector A",
+      "text": "The work carries atmosphere and emotion in a way that feels intimate, vivid, and unforgettable.",
+      "image": "images/testimonials/person-01.jpg"
+    },
+      {
+      "name": "Collector A",
+      "text": "The work carries atmosphere and emotion in a way that feels intimate, vivid, and unforgettable.",
+      "image": "images/testimonials/person-01.jpg"
+    },
+      {
+      "name": "Collector A",
+      "text": "The work carries atmosphere and emotion in a way that feels intimate, vivid, and unforgettable.",
+      "image": "images/testimonials/person-01.jpg"
+    },
+      {
       "name": "Collector A",
       "text": "The work carries atmosphere and emotion in a way that feels intimate, vivid, and unforgettable.",
       "image": "images/testimonials/person-01.jpg"
