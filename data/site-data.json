@@ -47,13 +47,13 @@
     {
       "title": "Project One",
       "description": "A visual narrative project exploring texture, atmosphere, and character through layered painting and illustration.",
-      "image": "images/projects/project-01.jpg",
+      "image": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792490127/IMG_0113.jpg",
       "url": "https://example.com/project-1"
     },
     {
       "title": "Project Two",
       "description": "A watercolor-led illustration series developed for storytelling and editorial work.",
-      "image": "images/projects/project-02.jpg",
+      "image": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792490126/IMG_1499.png",
       "url": "https://example.com/project-2"
     }
   ],
