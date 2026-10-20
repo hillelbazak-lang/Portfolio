@@ -45,30 +45,30 @@
   ],
   "projects": [
     {
-      "title": "Project One",
-      "description": "A visual narrative project exploring texture, atmosphere, and character through layered painting and illustration.",
+      "title": "Every Soul has a story",
+      "description": "A children's and youth book featuring a collection of stories about the figure of Rabbi Shlomo Carlebach. The book was written by the author and musician Uri Adler, and vividly illustrated with interpretation by the painter and illustrator Hillel Bazak..",
       "image": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792490127/IMG_0113.jpg",
-      "url": "https://example.com/project-1"
+      "url": "https://ybook.co.il/products/3627371?srsltid=AU7gw4UKgC1OCsJfjKNdiV-BNXWLn6ceqv4PNizEUewi91TdKbOlgTOX"
     },
     {
-      "title": "Project Two",
-      "description": "A watercolor-led illustration series developed for storytelling and editorial work.",
+      "title": "MidrashTherapie",
+      "description": "A psychotherapeutic book dealing with bibliotherapy through Chazal (Sages') midrashim. The book is a collaboration between Dr. Shmuel Shenhav, Dean of the Beit Vagan College, and illustrator Hillel Bazak, who together create a biblio- and photo-therapeutic journey.".",
       "image": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792490126/IMG_1499.png",
-      "url": "https://example.com/project-2"
+      "url": "https://beitel.co.il/products/%D7%9E%D7%93%D7%A8%D7%A9%D7%AA%D7%A8%D7%A4%D7%99%D7%94-%D7%A9%D7%9E%D7%95%D7%90%D7%9C-%D7%A9%D7%A0%D7%94%D7%91?srsltid=AU7gw4Vg7zJSFY95QcShZ1179gdHgfYkx8sAqmeNhpTb2EtQCdCgh-Wp"
     }
   ],
   "events": [
     {
-      "title": "Exhibition A",
-      "description": "A recent exhibition featuring selected works from the current collection and studies.",
+      "title": Auction",
+      "description": "Pieces from the 'Hollows' artwork series by artist Hillel Bazak were sold at the recent auction held by the Tirosh Auction House.",
       "image": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792490706/IMG_0116.jpg",
-      "url": "https://example.com/event-1"
+      "url": "https://www.tiroche.co.il/?s=%D7%94%D7%9C%D7%9C+%D7%91%D7%96%D7%A7&bp=1"
     },
     {
-      "title": "Talk B",
-      "description": "An artist talk and panel discussion focused on visual storytelling and process.",
+      "title": "Solo Exhibition",
+      "description": "The exhibition 'The Big Picture', a solo exhibition by artist Hillel Bazak at the Jerusalem Theatre..",
       "image": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792490454/IMG_6168.jpg",
-      "url": "https://example.com/event-2"
+      "url": "https://www.jerusalem-theatre.co.il/%D7%AA%D7%A2%D7%A8%D7%95%D7%9B%D7%95%D7%AA/4454/%D7%94%D7%9C%D7%9C_%D7%91%D7%96%D7%A7%3A_%D7%94%D7%AA%D7%9E%D7%95%D7%A0%D7%94_%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94-2"
     }
   ],
   "testimonials": [
@@ -104,8 +104,11 @@
     }
   ],
   "links": [
-    { "title": "Press: Art Feature", "url": "https://example.com/press" },
-    { "title": "Interview: Studio Talk", "url": "https://example.com/interview" },
-    { "title": "Exhibition Review", "url": "https://example.com/review" }
+    { "title": "Yekum Tarbut- imppresions from Hillel Bazak's solo exebition "the big pictur"", "url": "https://www.yekum.org/2026/08/%D7%94%D7%AA%D7%9E%D7%95%D7%A0%D7%94-%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94-%D7%AA%D7%A2%D7%A8%D7%95%D7%9B%D7%AA-%D7%99%D7%97%D7%99%D7%93-%D7%9C%D7%90%D7%9E%D7%9F-%D7%94%D7%9C%D7%9C-%D7%91%D7%96/" },
+    { "title": "Interview: Studio Talk", "url": "https://www.youtube.com/watch?v=NW0AsCFZo-A },
+    { "title": "Hillel bazak on podcast whith animator Josh Tawill", "url": "https://example.com/interview" },
+    { "title": ""Polishing the inerr diamond" a podcast episode featering artist Hillel Bazak", "url": "https://example.com/interview" },
+      { "title": "a recommandation to vist "THE BIG PICTURE" solo exebition on TimeOut magazine, "url": "https://timeout.co.il/%D7%AA%D7%A2%D7%A8%D7%95%D7%9B%D7%95%D7%AA-290726/" },
+    { "title": "feature article on artist Hillel Bazak", "url": "https://www.hidabroot.com/article/23911" }
   ]
 }
