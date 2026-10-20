@@ -27,9 +27,21 @@
   ],
   "colored": [
     { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792484525/IMG_9605.jpg", "title": "Colored 01", "alt": "Colored 01" },
-    { "src": "images/illustrations/colored-02.jpg", "title": "Colored 02", "alt": "Colored 02" },
-    { "src": "images/illustrations/colored-03.jpg", "title": "Colored 03", "alt": "Colored 03" },
-    { "src": "images/illustrations/colored-04.jpg", "title": "Colored 04", "alt": "Colored 04" }
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488255/IMG_1130.jpg", "title": "Colored 02", "alt": "Colored 02" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488809/IMG_1494.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488806/IMG_2092.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488798/IMG_0032.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488797/IMG_0045.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488258/IMG_9608.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488257/IMG_9606.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488243/IMG_9607.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488250/IMG_1595.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488249/IMG_9666.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488815/IMG_4755.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488859/IMG_4753.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488802/IMG_2131.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792419611/IMG_0096.jpg", "title": "Colored 03", "alt": "Colored 03" },
+    { "src": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792488794/IMG_0089.jpg", "title": "Colored 04", "alt": "Colored 04" }
   ],
   "projects": [
     {
