@@ -46,15 +46,15 @@
   "projects": [
     {
       "title": "Every Soul has a story",
-      "description": "A children's and youth book featuring a collection of stories about the figure of Rabbi Shlomo Carlebach. The book was written by the author and musician Uri Adler, and vividly illustrated with interpretation by the painter and illustrator Hillel Bazak..",
+      "description": "A children's and youth book featuring a collection of stories about the figure of Rabbi Shlomo Carlebach. The book was written by the author and musician Uri Adler, and vividly illustrated with narrative scenes.",
       "image": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792490127/IMG_0113.jpg",
       "url": "https://ybook.co.il/products/3627371?srsltid=AU7gw4UKgC1OCsJfjKNdiV-BNXWLn6ceqv4PNizEUewi91TdKbOlgTOX"
     },
     {
       "title": "MidrashTherapie",
-      "description": "A psychotherapeutic book dealing with bibliotherapy through Chazal (Sages') midrashim. The book is a collaboration between Dr. Shmuel Shenhav, Dean of the Beit Vagan College, and illustrator Hillel Bazak, who together create a biblio- and photo-therapeutic journey.".",
+      "description": "A psychotherapeutic book dealing with bibliotherapy through Chazal (Sages') midrashim. The book is a collaboration between Dr. Shmuel Shenhav, Dean of the Beit Vagan College, and other contributors.",
       "image": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792490126/IMG_1499.png",
-      "url": "https://beitel.co.il/products/%D7%9E%D7%93%D7%A8%D7%A9%D7%AA%D7%A8%D7%A4%D7%99%D7%94-%D7%A9%D7%9E%D7%95%D7%90%D7%9C-%D7%A9%D7%A0%D7%94%D7%91?srsltid=AU7gw4Vg7zJSFY95QcShZ1179gdHgfYkx8sAqmeNhpTb2EtQCdCgh-Wp"
+      "url": "https://beitel.co.il/products/%D7%9E%D7%93%D7%A8%D7%A9%D7%AA%D7%A8%D7%A4%D7%99%D7%94-%D7%A9%D7%9E%D7%95%D7%90%D7%9C-%D7%A9%D7%A0%D7%94%D7%91?srsltid=AU7gw4Vg7zJSFY95QcShZ1179gdHgfYkx8sAq"
     }
   ],
   "events": [
@@ -66,9 +66,9 @@
     },
     {
       "title": "Solo Exhibition",
-      "description": "The exhibition 'The Big Picture', a solo exhibition by artist Hillel Bazak at the Jerusalem Theatre..",
+      "description": "The exhibition 'The Big Picture', a solo exhibition by artist Hillel Bazak at the Jerusalem Theatre.",
       "image": "https://res.cloudinary.com/wtygyz1f/image/upload/v1792490454/IMG_6168.jpg",
-      "url": "https://www.jerusalem-theatre.co.il/%D7%AA%D7%A2%D7%A8%D7%95%D7%9B%D7%95%D7%AA/4454/%D7%94%D7%9C%D7%9C_%D7%91%D7%96%D7%A7%3A_%D7%94%D7%AA%D7%9E%D7%95%D7%A0%D7%94_%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94-2"
+      "url": "https://www.jerusalem-theatre.co.il/%D7%AA%D7%A2%D7%A8%D7%95%D7%9B%D7%95%D7%AA/4454/%D7%94%D7%9C%D7%9C_%D7%91%D7%96%D7%A7%3A_%D7%94%D7%AA%D7%9E%D7%95%D7%A0%D7%94_%D7%94%D7%92%D7%93%D7%95"
     }
   ],
   "testimonials": [
@@ -77,22 +77,22 @@
       "text": "The work carries atmosphere and emotion in a way that feels intimate, vivid, and unforgettable.",
       "image": "images/testimonials/person-01.jpg"
     },
-      {
+    {
       "name": "Collector A",
       "text": "The work carries atmosphere and emotion in a way that feels intimate, vivid, and unforgettable.",
       "image": "images/testimonials/person-01.jpg"
     },
-      {
+    {
       "name": "Collector A",
       "text": "The work carries atmosphere and emotion in a way that feels intimate, vivid, and unforgettable.",
       "image": "images/testimonials/person-01.jpg"
     },
-      {
+    {
       "name": "Collector A",
       "text": "The work carries atmosphere and emotion in a way that feels intimate, vivid, and unforgettable.",
       "image": "images/testimonials/person-01.jpg"
     },
-      {
+    {
       "name": "Collector A",
       "text": "The work carries atmosphere and emotion in a way that feels intimate, vivid, and unforgettable.",
       "image": "images/testimonials/person-01.jpg"
@@ -104,10 +104,29 @@
     }
   ],
   "links": [
-    { "title": "Yekum Tarbut- imppresions from Hillel Bazak's solo exebition the big pictur", "url": "https://www.yekum.org/2026/08/%D7%94%D7%AA%D7%9E%D7%95%D7%A0%D7%94-%D7%94%D7%92%D7%93%D7%95%D7%9C%D7%94-%D7%AA%D7%A2%D7%A8%D7%95%D7%9B%D7%AA-%D7%99%D7%97%D7%99%D7%93-%D7%9C%D7%90%D7%9E%D7%9F-%D7%94%D7%9C%D7%9C-%D7%91%D7%96/" },
-    { "title": "Interview: Studio Talk", "url": "https://www.youtube.com/watch?v=NW0AsCFZo-A" },
-    { "title": "Hillel bazak on podcast whith animator Josh Tawill", "url": "https://example.com/interview" },
-    { "title": "Polishing the inerr diamond a podcast episode featering artist Hillel Bazak", "url": "https://example.com/interview" },
-    { "title": "feature article on artist Hillel Bazak", "url": "https://www.hidabroot.com/article/23911" }
+    {
+      "title": "Yekum Tarbut - impressions from Hillel Bazak's solo exhibition \"The Big Picture\"",
+      "url": "https://www.yekum.org/2026/08/%D7%94%D7%AA%D7%9E%D7%95%D7%A0%D7%94-%D7%94%D7%92%D7%93%D7%95%D7%9"
+    },
+    {
+      "title": "Interview: Studio Talk",
+      "url": "https://www.youtube.com/watch?v=NW0AsCFZo-A"
+    },
+    {
+      "title": "Hillel Bazak on podcast with animator Josh Tawill",
+      "url": "https://example.com/interview"
+    },
+    {
+      "title": "Polishing the inner diamond: a podcast episode featuring artist Hillel Bazak",
+      "url": "https://example.com/interview"
+    },
+    {
+      "title": "A recommendation to visit THE BIG PICTURE solo exhibition on TimeOut magazine",
+      "url": "https://timeout.co.il/%D7%AA%D7%A2%D7%A8%D7%95%D7%9B%D7%95%D7%AA-290726/"
+    },
+    {
+      "title": "Feature article on artist Hillel Bazak",
+      "url": "https://www.hidabroot.com/article/23911"
+    }
   ]
 }
